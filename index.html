@@ -10,6 +10,15 @@
             margin: 0;
             padding: 0;
         }
+        .piano-data{
+            width: 100%;
+            overflow: hidden;
+            margin-top: 50px;
+        }
+        .piano-data ul{
+            margin: 0 auto;
+            margin-left: 4%;
+        }
         html,body{
             width: 100%;
             height: 100%;
@@ -18,17 +27,337 @@
         .piano-box{
             width: 100%;
             height: 100%;
-          
+            background: #f7f7f7 url('bg.jpg') no-repeat;
         }
         .piano-header{
-            height: 60px;
+            height: 80px;
             background: #fff;
+            padding: 20px 80px;
+            box-sizing: border-box;
+            min-width: 1200px;
+        }
+        .piano-header img{
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            float: left;
+            margin-right: 10px;
+        }
+        .piano-header .name{
+            padding-top: 1px;
+            font-size: 14px;
+            float: left;
+        }
+        .piano-main{
+            min-width: 1200px;
+            overflow: hidden;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 0 80px;
+        }
+        .piano-r{
+            float: right;
+            margin-top: 30px;
+        }
+        .piano-l{
+            float: left;
+            border:1px solid #e7e7e7;
+            border-radius: 5px;
+            margin-top: 30px;
+            background: #fff;
+        }
+        .piano-item1{
+            border:1px solid #e7e7e7;
+            height: 430px;
+            background: #fff;
+            border-radius: 5px;
+        }
+        .piano-item2{
+            border:1px solid #e7e7e7;
+            height: 110px;
+            background: #fff;
+            border-radius: 5px;
+            margin-top: 53px;
+        }
+        .piano-l{
+            width: 45%;
+            margin-right: 50px;
+            height: 600px;
+        }
+        .piano-r{
+            width: 45%;
+            
+        }
+        .echarts{
+            width: 100%;
+            height: 400px;
+        }
+        .piano-title{
+            color: #393939;
+            font-weight: bold;
+            margin-left: 20px;
+            margin-top: 35px;
+            padding-left: 5px;
+            text-align: left;
+            border-left: 3px solid #f38c87;
+        }
+        .piano-data li p:nth-child(1){
+            font-size: 18px;
+            color: #000;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .piano-data li:last-child{
+            border-right:none;
+        }
+        
+        .piano-data li p:nth-child(2){
+            color: #8d8d8d;
+        }
+        .piano-data li span{
+            font-size: 12px;
+            display: inline-block;
+            margin: 0 5px;
+            font-weight: normal;
+        }
+        .piano-data li{
+            width: 32%;
+            text-align: center;
+            float: left;
+            font-size: 12px;
+            list-style: none;
+            border-right: 1px solid #e8e8e8;
+        }
+        .shengji{
+            width: 70px;
+            height: 25px;
+            line-height: 25px;
+            color: #fff;
+            float: left;
+            text-align: center;
+            font-size: 12px;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-top: 7px;
+            cursor: pointer;
+            background-color: #FFE53B;
+            background-image: linear-gradient(147deg,#faaf52 0%,#facf4d 74%);
+            background-image: -webkit-linear-gradient(147deg,#faaf52 0%,#facf4d 74%);
+            background-image: -moz-linear-gradient(147deg,#faaf52 0%,#facf4d 74%);
+            background-image: -o-linear-gradient(147deg,#faaf52 0%,#facf4d 74%);
+        }
+        .nav{
+            float: left;
+            margin-top: 7px;
+            margin-left: 90px;
+        }
+        .nav li{
+            float: left;
+            list-style: none;
+            text-align: center;
+            width: 80px;
+        }
+        .nav a{
+            font-size: 14px;
+            color: #424242;
+            text-decoration: none;
+        }
+        .nav .active a{
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 3px solid #f38c87;
+            padding-bottom: 10px;
+        }
+        .search{
+            float:right;
+        }
+        .search-icon{
+            cursor: pointer;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: url('search-icon.png') no-repeat center center;
+            background-size: contain;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .search-input{
+            outline: none;
+            width: 200px;
+            padding: 10px 10px;
+            border:1px solid #e7e7e7;
+            border-radius: 5px;
+        }
+        .piano-itemUl li{
+            list-style: none;
+        }
+        .piano-itemUl{
+            padding-top: 20px;
+        }
+        .piano-itemUl li{
+            padding: 6px 10px;
+            text-align: left;
+            border-radius: 3px;
+            box-sizing: border-box;
+            margin: 0 10px;
+            background: #c9c9c9;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .piano-itemUl li{
+            position: relative;
+        }
+        .jindu {
+            position: absolute;
+            left:0;
+            top:0;
+            border-radius: 3px 0 0 3px;
+            height: 100%;
+            background:rgba(255,166,44,0.5);
+            z-index: 1;
+        }
+        .piano-itemUl li p{
+            position: relative;
+            z-index: 3;
+        }
+        .piano-itemUl li p:nth-child(1){
+            color: #fff;
+            font-size: 14px;
+        }
+        .piano-itemUl li p:nth-child(2){
+            color: #fff;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
     <div class="piano-box">
-        <div class="piano-header">213</div>
+        <div class="piano-header">
+            <img src="https://ss3.baidu.com/-rVXeDTa2gU2pMbgoY3K/it/u=1918342226,2795336542&fm=202&mola=new&crop=v1">
+            <div class="name">
+                <p style="font-weight: bold;">面包在奔跑</p>
+                <p style="color: #c23531;">Lv.0</p>
+            </div>
+            <div class="shengji">升级VIP</div>
+            <div class="nav">
+                <ul>
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#">教学</a></li>
+                    <li><a href="#">歌曲</a></li>
+                    <li><a href="#">训练营</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <span class="search-icon"></span>
+                <input type="text" class="search-input">
+            </div>
+        </div>
+        <div class="piano-main">
+            <div class="piano-l">
+                <div class="piano-title">我的训练数据</div>
+                <div class="piano-data">
+                    <ul>
+                        <li>
+                            <p>0<span>小时</span>18<span>分钟</span></p>
+                            <p>累计练习</p>
+                        </li>
+                        <li>
+                            <p>0<span>小时</span>18<span>分钟</span></p>
+                            <p>本周练习</p>
+                        </li>
+                        <li>
+                            <p>0<span>名</span></p>
+                            <p>本周排名</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--雷達圖-->
+                <div class="echarts" id="echarts-01">
+
+                </div>
+            </div>
+            <div class="piano-r">
+                <div class="piano-item1">
+                    <div class="piano-title">学习进度</div>
+                    <div>
+                        <ul class="piano-itemUl">
+                            <li>
+                                <p>弹唱基础 第一章</p>
+                                <p>20%</p>
+                                <div class="jindu" style="width: 20%;"></div>
+                            </li>
+                            <li>
+                                <p>弹唱基础 第一章</p>
+                                <p>20%</p>
+                                <div class="jindu" style="width: 20%;"></div>
+                            </li>
+                            <li>
+                                <p>弹唱基础 第一章</p>
+                                <p>20%</p>
+                            </li>
+                            <li>
+                                <p>弹唱基础 第一章</p>
+                                <p>20%</p>
+                            </li>
+                            <li>
+                                <p>弹唱基础 第一章</p>
+                                <p>20%</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="piano-item2">
+
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="http://wuye.xfangl.com/static/js/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.min.js"></script>
+    <script>
+      var myChart = echarts.init(document.getElementById('echarts-01'));
+      option = {
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        x: 'center',
+        data:[]
+    },
+    radar: [
+        {
+            indicator: [
+                {text: '弹唱', max: 100},
+                {text: '左手', max: 100},
+                {text: '简谱', max: 100},
+                {text: '右手', max: 100}
+            ],
+            center: ['50%','50%'],
+            radius: 80
+        }
+    ],
+    series: [
+        {
+            type: 'radar',
+             tooltip: {
+                trigger: 'item'
+            },
+            itemStyle: {normal: {areaStyle: {type: 'default'}}},
+            data: [
+                {
+                    value: [50,50,0,0],
+                    name: '钢琴弹唱'
+                }
+            ]
+        }
+    ]
+};
+myChart.setOption(option);
+
+$(window).resize(function(){
+    myChart.resize();
+});
+
+    </script>
 </body>
 </html>
