@@ -5,6 +5,39 @@
 ul li{
     list-style: none;
 }
+a{
+    color: #000;
+    text-decoration: none;
+}
+.gmBtn{
+    width: 100px;
+    height: 20px;
+    background: #f38c87;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.priceNum{
+    width: 100%;
+    display: inline-block;
+    color: #f38c87;
+    margin-top: 10px;
+    text-align: center !important;
+}
+.vip li{
+    border:1px solid #ccc;
+    padding:15px 10px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+.vip .readNum{
+    top:75px;
+    right:12px;
+}
 .piano-data{
     width: 100%;
     overflow: hidden;
@@ -253,10 +286,9 @@ html,body{
 .piano-course-ul li{
     position: relative;
     width: 120px;
-    height: 110px;
     float: left;
     margin-right: 20px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: 14px;
 }
 .piano-course-ul{
