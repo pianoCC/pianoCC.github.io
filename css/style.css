@@ -78,6 +78,19 @@ html,body{
     box-sizing: border-box;
     min-width: 1200px;
 }
+.piano-tx p{
+    display: inline-block;
+    float: left;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.piano-tx img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    float: left;
+}
 .piano-header img{
     width: 40px;
     height: 40px;
@@ -89,6 +102,7 @@ html,body{
     padding-top: 1px;
     font-size: 14px;
     float: left;
+    cursor: pointer;
 }
 .piano-main{
     /* min-width: 1200px; */
@@ -151,6 +165,10 @@ html,body{
     background-size: 100%;
     border-radius: 5px;
     margin-top: 53px;
+    color:#ccc;
+    text-align: center;
+    line-height: 110px;
+    font-size: 30px;
 }
 .piano-l{
     width: 45%;
@@ -208,6 +226,7 @@ html,body{
     float: left;
     font-size: 12px;
     list-style: none;
+    margin-bottom: 30px;
     border-right: 1px solid #e8e8e8;
 }
 .shengji{
@@ -276,6 +295,29 @@ html,body{
 .piano-itemUl{
     padding-top: 20px;
 }
+.piano-itemUl.index .jindu {
+    position: absolute;
+    left:0;
+    top:0;
+    border-radius: 3px 0 0 3px;
+    height: 100%;
+    background:transparent;
+    z-index: 1;
+}
+.piano-itemUl.index li{
+    padding: 6px 10px;
+    text-align: left;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 0 10px;
+    background: #fff;
+    height: 50px;
+    margin-bottom: 10px;
+    border:1px solid #ccc;
+}
+.piano-itemUl.index p{
+   color: #000 !important;
+}
 .piano-itemUl li{
     padding: 6px 10px;
     text-align: left;
@@ -289,6 +331,7 @@ html,body{
 .piano-itemUl li{
     position: relative;
 }
+
 .jindu {
     position: absolute;
     left:0;
