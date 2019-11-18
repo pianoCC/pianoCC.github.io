@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.piano-data{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.piano-data ul{
+    margin: 0 auto;
+    margin-left: 4%;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+}
+.piano-box{
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7 url('img/bg.jpg') no-repeat;
+}
+.piano-header{
+    height: 80px;
+    background: #fff;
+    padding: 20px 80px;
+    box-sizing: border-box;
+    min-width: 1200px;
+}
+.piano-header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+}
+.piano-header .name{
+    padding-top: 1px;
+    font-size: 14px;
+    float: left;
+}
+.piano-main{
+    min-width: 1200px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 80px;
+}
+.piano-r{
+    float: right;
+    margin-top: 30px;
+}
+.piano-l{
+    float: left;
+    border:1px solid #e7e7e7;
+    border-radius: 5px;
+    margin-top: 30px;
+    background: #fff;
+}
+.piano-item1{
+    border:1px solid #e7e7e7;
+    height: 430px;
+    background: #fff;
+    border-radius: 5px;
+}
+.piano-item2{
+    border:1px solid #e7e7e7;
+    height: 110px;
+    background: #fff;
+    background-size: 100%;
+    border-radius: 5px;
+    margin-top: 53px;
+}
+.piano-l{
+    width: 45%;
+    margin-right: 50px;
+    height: 600px;
+}
+.piano-r{
+    width: 45%;
+    
+}
+.echarts{
+    width: 100%;
+    height: 400px;
+}
+.piano-title{
+    color: #393939;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 35px;
+    padding-left: 5px;
+    text-align: left;
+    border-left: 3px solid #f38c87;
+}
+.piano-data li p:nth-child(1){
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.piano-data li:last-child{
+    border-right:none;
+}
+
+.piano-data li p:nth-child(2){
+    color: #8d8d8d;
+}
+.piano-data li span{
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 5px;
+    font-weight: normal;
+}
+.piano-data li{
+    width: 32%;
+    text-align: center;
+    float: left;
+    font-size: 12px;
+    list-style: none;
+    border-right: 1px solid #e8e8e8;
+}
+.shengji{
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 7px;
+    cursor: pointer;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg,#faaf52 0%,#facf4d 74%);
+    background-image: -webkit-linear-gradient(147deg,#faaf52 0%,#facf4d 74%);
+    background-image: -moz-linear-gradient(147deg,#faaf52 0%,#facf4d 74%);
+    background-image: -o-linear-gradient(147deg,#faaf52 0%,#facf4d 74%);
+}
+.nav{
+    float: left;
+    margin-top: 7px;
+    margin-left: 90px;
+}
+.nav li{
+    float: left;
+    list-style: none;
+    text-align: center;
+    width: 80px;
+}
+.nav a{
+    font-size: 14px;
+    color: #424242;
+    text-decoration: none;
+}
+.nav .active a{
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 3px solid #f38c87;
+    padding-bottom: 10px;
+}
+.search{
+    float:right;
+}
+.search-icon{
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('search-icon.png') no-repeat center center;
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.search-input{
+    outline: none;
+    width: 200px;
+    padding: 10px 10px;
+    border:1px solid #e7e7e7;
+    border-radius: 5px;
+}
+.piano-itemUl li{
+    list-style: none;
+}
+.piano-itemUl{
+    padding-top: 20px;
+}
+.piano-itemUl li{
+    padding: 6px 10px;
+    text-align: left;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 0 10px;
+    background: #c9c9c9;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.piano-itemUl li{
+    position: relative;
+}
+.jindu {
+    position: absolute;
+    left:0;
+    top:0;
+    border-radius: 3px 0 0 3px;
+    height: 100%;
+    background:rgba(255,166,44,0.5);
+    z-index: 1;
+}
+.piano-itemUl li p{
+    position: relative;
+    z-index: 3;
+}
+.piano-itemUl li p:nth-child(1){
+    color: #fff;
+    font-size: 14px;
+}
+.piano-itemUl li p:nth-child(2){
+    color: #fff;
+    font-size: 12px;
+}
+.block{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    z-index: 9999;
+}
