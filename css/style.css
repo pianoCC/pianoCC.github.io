@@ -77,11 +77,41 @@ html,body{
     float: left;
 }
 .piano-main{
-    min-width: 1200px;
+    /* min-width: 1200px; */
     overflow: hidden;
     text-align: center;
     box-sizing: border-box;
     padding: 0 80px;
+}
+.pianoKeyboard{
+    position: relative;
+}
+.yuan:nth-child(1){
+    position: absolute;
+    left:150px;
+    top:90px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: rgba(224, 201, 124, 0.5);
+}
+.yuan:nth-child(2){
+    position: absolute;
+    left:115px;
+    top:90px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: rgba(224, 201, 124, 0.5);
+}
+.yuan:nth-child(3){
+    position: absolute;
+    left:132px;
+    top:90px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: rgba(224, 201, 124, 0.5);
 }
 .piano-r{
     float: right;
@@ -301,4 +331,67 @@ html,body{
     top: 60px;
     color: #fff;
     font-size: 12px;
+}
+.piano-scoreDetails{
+    padding-top: 20px;
+    overflow: hidden;
+}
+.piano-scoreDetails .title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.piano-scoreDetails .tableTH{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 30px;
+}
+.piano-scoreDetails .tableTR{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 10px;
+}
+.piano-scoreDetails .tableTR li:nth-child(1){
+    width: 10%;
+}
+.piano-scoreDetails .tableTR li{
+    float: left;
+    width: 22%;
+    height: 45px;
+    box-sizing: border-box;
+    line-height: 45px;
+    color: #333;
+    font-size: 16px;
+    border:1px solid #ccc;
+    border-width: 1px 0 1px 0;
+}
+.piano-scoreDetails .tableTH li:nth-child(1){
+    width: 10%;
+}
+.hexian{
+    text-align: left;
+    padding-left: 10px;
+}
+.piano-scoreDetails .tableTH li{
+    float: left;
+    width: 22%;
+    height: 35px;
+    box-sizing: border-box;
+    line-height: 35px;
+    background: #ccc;
+    color: #fff;
+    font-size: 12px;
+    border-right: 2px solid #fff;
+
+}
+.pianoKeyboard{
+    position: fixed;
+    left:50%;
+    width: 100%;
+    bottom:0;
+    height: 130px;
+    background: url('../img/key.png') no-repeat center bottom;
+    background-size: 100%;
+    transform: translate(-50%, 0%);
 }
