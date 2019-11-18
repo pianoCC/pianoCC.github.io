@@ -28,11 +28,24 @@ a{
     margin-top: 10px;
     text-align: center !important;
 }
+.scorePage li{
+    border:1px solid #ccc;
+    padding:15px 10px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+.scorePage .readNum{
+    top:155px;
+    right:12px;
+}
 .vip li{
     border:1px solid #ccc;
     padding:15px 10px;
     background: #fff;
     box-shadow: 0 0 10px #ccc;
+}
+.scorePage li img{
+    height: 160px !important;
 }
 .vip .readNum{
     top:75px;
